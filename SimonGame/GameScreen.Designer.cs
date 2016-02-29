@@ -28,57 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonYellow = new System.Windows.Forms.Button();
+            this.buttonBlue = new System.Windows.Forms.Button();
+            this.buttonGreen = new System.Windows.Forms.Button();
+            this.buttonRed = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonYellow
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(295, 295);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonYellow.Location = new System.Drawing.Point(3, 3);
+            this.buttonYellow.Name = "buttonYellow";
+            this.buttonYellow.Size = new System.Drawing.Size(295, 295);
+            this.buttonYellow.TabIndex = 1;
+            this.buttonYellow.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonBlue
             // 
-            this.button2.Location = new System.Drawing.Point(302, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(295, 295);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonBlue.Location = new System.Drawing.Point(302, 3);
+            this.buttonBlue.Name = "buttonBlue";
+            this.buttonBlue.Size = new System.Drawing.Size(295, 295);
+            this.buttonBlue.TabIndex = 2;
+            this.buttonBlue.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonGreen
             // 
-            this.button3.Location = new System.Drawing.Point(3, 302);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(295, 295);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonGreen.Location = new System.Drawing.Point(3, 302);
+            this.buttonGreen.Name = "buttonGreen";
+            this.buttonGreen.Size = new System.Drawing.Size(295, 295);
+            this.buttonGreen.TabIndex = 3;
+            this.buttonGreen.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonRed
             // 
-            this.button4.Location = new System.Drawing.Point(302, 302);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(295, 295);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonRed.Location = new System.Drawing.Point(302, 302);
+            this.buttonRed.Name = "buttonRed";
+            this.buttonRed.Size = new System.Drawing.Size(295, 295);
+            this.buttonRed.TabIndex = 4;
+            this.buttonRed.UseVisualStyleBackColor = true;
             // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonRed);
+            this.Controls.Add(this.buttonGreen);
+            this.Controls.Add(this.buttonBlue);
+            this.Controls.Add(this.buttonYellow);
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(600, 600);
             this.ResumeLayout(false);
@@ -87,9 +83,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonYellow;
+        private System.Windows.Forms.Button buttonBlue;
+        private System.Windows.Forms.Button buttonGreen;
+        private System.Windows.Forms.Button buttonRed;
     }
 }

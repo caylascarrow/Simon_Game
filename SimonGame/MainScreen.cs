@@ -15,17 +15,27 @@ namespace SimonGame
         public MainScreen()
         {
             InitializeComponent();
-
-
         }
 
         private void goGame_Click(object sender, EventArgs e)
         {
+            //remove "this" control and make "f" control
             Form f = this.FindForm();
             f.Controls.Remove(this);
 
+            //go to GameScreen
             GameScreen gs = new GameScreen();
             f.Controls.Add(gs);
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            //remove control "this" and make control "f"
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+
+            //close program
+            f.Close();
         }
     }
 }

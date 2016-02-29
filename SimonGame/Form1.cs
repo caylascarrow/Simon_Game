@@ -12,6 +12,9 @@ namespace SimonGame
 {
     public partial class Form1 : Form
     {
+        public static List<int> pattern = new List<int>();
+
+
         public Form1()
         {
             InitializeComponent();
@@ -19,6 +22,9 @@ namespace SimonGame
             //make and go to main screen
             MainScreen ms = new MainScreen();
             this.Controls.Add(ms);
+
+
         }
+
     }
 }

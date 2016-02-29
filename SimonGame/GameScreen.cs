@@ -12,9 +12,23 @@ namespace SimonGame
 {
     public partial class GameScreen : UserControl
     {
+
+        int colourVal;
+
+        string colourName;
+
+        Random randNum = new Random();
+
         public GameScreen()
         {
             InitializeComponent();
+
+            ComputerTurn(randNum, colourVal);
+        }
+        public void ComputerTurn(Random randNum, int colourVal)
+        {
+            colourVal = randNum.Next(1, 5);
+
         }
     }
 }
