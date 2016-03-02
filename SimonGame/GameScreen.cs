@@ -29,37 +29,58 @@ namespace SimonGame
         }
         public void ComputerTurn(Random randNum, int colourVal)
         {
-            //remove "this" control and make "f" control
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
 
             //make colourVal equal to a random number
-            colourVal = randNum.Next(1, 5);
+            colourVal = randNum.Next(0, 4);
 
             //add random number into list
             Form1.pattern.Add(colourVal); 
 
             //make buttons light up as the colours
-            for(int i = -1; i< Form1.pattern.Count; i++)
+            for(int i = 0; i< Form1.pattern.Count; i++)
             {
-                if(Form1.pattern[i] == 1)
+                if(Form1.pattern[i] == 0)
                 {
                     buttonYellow.ForeColor = Color.Yellow;
 
-                    f.Refresh();
+                    this.Refresh();
                     Thread.Sleep(500);
 
                     buttonYellow.ForeColor = Color.SlateBlue;
                 }
-                if(Form1.pattern[i] == 2)
+
+                if(Form1.pattern[i] == 1)
                 {
                     buttonBlue.ForeColor = Color.Blue;
 
-                    f.Refresh();
+                    this.Refresh();
                     Thread.Sleep(500);
 
                     buttonBlue.ForeColor = Color.SlateBlue;
                 }
+
+                if (Form1.pattern[i] == 2)
+                {
+                    buttonGreen.ForeColor = Color.Green;
+
+                    this.Refresh();
+                    Thread.Sleep(500);
+
+                    buttonGreen.ForeColor = Color.SlateBlue;
+                }
+
+                if (Form1.pattern[i] == 3)
+                {
+                    buttonRed.ForeColor = Color.Red;
+
+                    this.Refresh();
+                    Thread.Sleep(500);
+
+                    buttonRed.ForeColor = Color.SlateBlue;
+                }
+
+                Form1.guessIndex = 0;
+
             }
         }
     }

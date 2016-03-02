@@ -13,7 +13,7 @@ namespace SimonGame
     public partial class Form1 : Form
     {
         public static List<int> pattern = new List<int>();
-
+        public static int guessIndex = 0;
 
         public Form1()
         {
