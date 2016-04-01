@@ -34,50 +34,52 @@ namespace SimonGame
             colourVal = randNum.Next(0, 4);
 
             //add random number into list
-            Form1.pattern.Add(colourVal); 
+            Form1.pattern.Add(colourVal);
 
+            #region colour buttons
             //make buttons light up as the colours
-            for(int i = 0; i< Form1.pattern.Count; i++)
+            for(int i = 0; i< Form1.pattern.Count(); i++)
             {
                 if(Form1.pattern[i] == 0)
                 {
-                    buttonYellow.ForeColor = Color.Yellow;
+                    buttonYellow.BackColor = Color.Yellow;
 
                     this.Refresh();
                     Thread.Sleep(500);
 
-                    buttonYellow.ForeColor = Color.SlateBlue;
+                    buttonYellow.BackColor = Color.SlateBlue;
                 }
 
                 if(Form1.pattern[i] == 1)
                 {
-                    buttonBlue.ForeColor = Color.Blue;
+                    buttonBlue.BackColor = Color.Blue;
 
                     this.Refresh();
                     Thread.Sleep(500);
 
-                    buttonBlue.ForeColor = Color.SlateBlue;
+                    buttonBlue.BackColor = Color.SlateBlue;
                 }
 
                 if (Form1.pattern[i] == 2)
                 {
-                    buttonGreen.ForeColor = Color.Green;
+                    buttonGreen.BackColor = Color.Green;
 
                     this.Refresh();
                     Thread.Sleep(500);
 
-                    buttonGreen.ForeColor = Color.SlateBlue;
+                    buttonGreen.BackColor = Color.SlateBlue;
                 }
 
                 if (Form1.pattern[i] == 3)
                 {
-                    buttonRed.ForeColor = Color.Red;
+                    buttonRed.BackColor = Color.Red;
 
                     this.Refresh();
                     Thread.Sleep(500);
 
-                    buttonRed.ForeColor = Color.SlateBlue;
+                    buttonRed.BackColor = Color.SlateBlue;
                 }
+                #endregion
 
                 Form1.guessIndex = 0;
 
