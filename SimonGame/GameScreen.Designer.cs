@@ -41,14 +41,17 @@
             this.buttonYellow.Size = new System.Drawing.Size(295, 295);
             this.buttonYellow.TabIndex = 1;
             this.buttonYellow.UseVisualStyleBackColor = true;
+            this.buttonYellow.Click += new System.EventHandler(this.buttonYellow_Click);
             // 
             // buttonBlue
             // 
+            this.buttonBlue.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonBlue.Location = new System.Drawing.Point(302, 3);
             this.buttonBlue.Name = "buttonBlue";
             this.buttonBlue.Size = new System.Drawing.Size(295, 295);
             this.buttonBlue.TabIndex = 2;
-            this.buttonBlue.UseVisualStyleBackColor = true;
+            this.buttonBlue.UseVisualStyleBackColor = false;
+            this.buttonBlue.Click += new System.EventHandler(this.buttonBlue_Click);
             // 
             // buttonGreen
             // 
@@ -57,6 +60,7 @@
             this.buttonGreen.Size = new System.Drawing.Size(295, 295);
             this.buttonGreen.TabIndex = 3;
             this.buttonGreen.UseVisualStyleBackColor = true;
+            this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
             // 
             // buttonRed
             // 
@@ -65,6 +69,7 @@
             this.buttonRed.Size = new System.Drawing.Size(295, 295);
             this.buttonRed.TabIndex = 4;
             this.buttonRed.UseVisualStyleBackColor = true;
+            this.buttonRed.Click += new System.EventHandler(this.buttonRed_Click);
             // 
             // GameScreen
             // 

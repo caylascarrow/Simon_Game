@@ -26,6 +26,8 @@ namespace SimonGame
 
             //go to computer's turn method
             ComputerTurn(randNum, colourVal);
+
+            
         }
         public void ComputerTurn(Random randNum, int colourVal)
         {
@@ -43,47 +45,64 @@ namespace SimonGame
                 if(Form1.pattern[i] == 0)
                 {
                     buttonYellow.BackColor = Color.Yellow;
-
-                    this.Refresh();
-                    Thread.Sleep(500);
-
-                    buttonYellow.BackColor = Color.SlateBlue;
                 }
 
                 if(Form1.pattern[i] == 1)
                 {
                     buttonBlue.BackColor = Color.Blue;
-
-                    this.Refresh();
-                    Thread.Sleep(500);
-
-                    buttonBlue.BackColor = Color.SlateBlue;
                 }
 
                 if (Form1.pattern[i] == 2)
                 {
                     buttonGreen.BackColor = Color.Green;
-
-                    this.Refresh();
-                    Thread.Sleep(500);
-
-                    buttonGreen.BackColor = Color.SlateBlue;
                 }
 
                 if (Form1.pattern[i] == 3)
                 {
                     buttonRed.BackColor = Color.Red;
-
-                    this.Refresh();
-                    Thread.Sleep(500);
-
-                    buttonRed.BackColor = Color.SlateBlue;
                 }
                 #endregion
+
+                this.Refresh();
+                Thread.Sleep(10000);
+
+                //buttonRed.BackColor = Color.Gainsboro;
+                //buttonGreen.BackColor = Color.Gainsboro;
+                //buttonBlue.BackColor = Color.Gainsboro;
+                //buttonYellow.BackColor = Color.Gainsboro;
 
                 Form1.guessIndex = 0;
 
             }
+        }
+
+        public void PlayerTurn(string colour)
+        {
+
+        }
+
+        private void buttonYellow_Click(object sender, EventArgs e)
+        {
+            string col = "yellow";
+            PlayerTurn(col);
+        }
+
+        private void buttonBlue_Click(object sender, EventArgs e)
+        {
+            string col = "blue";
+            PlayerTurn(col);
+        }
+
+        private void buttonGreen_Click(object sender, EventArgs e)
+        {
+            string col = "green";
+            PlayerTurn(col);
+        }
+
+        private void buttonRed_Click(object sender, EventArgs e)
+        {
+            string col = "red";
+            PlayerTurn(col);
         }
     }
 }
